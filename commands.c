@@ -15,7 +15,7 @@
 
 #include "commands.h"
 
-
+//Function to give pwd
 int pwd()
 {
 	char cwd[100000];
@@ -23,7 +23,7 @@ int pwd()
 	return 0;
 }
 
-
+//Function to implement echo
 int echo(char **argv)
 {
   if (argv[1][0]=='$')
@@ -45,7 +45,7 @@ int echo(char **argv)
 	return 0;
 }
 
-
+//Function to use cd.
 int cd(char **argv)
 {
   if (argv[1]==NULL)
